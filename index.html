@@ -1,37 +1,239 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopi O - Cita Rasa Klasik</title>
+    <title>Kopi O - Cita Rasa Klasik Khas Nusantara & Kopitiam</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-stone-900 text-stone-100 font-sans">
-    <nav class="flex justify-between items-center px-8 py-6 bg-stone-950 border-b border-stone-800 sticky top-0 z-50">
-        <h1 class="text-2xl font-bold tracking-wider text-amber-500">KOPI O</h1>
-        <div class="space-x-6 text-sm font-medium">
-            <a href="index.html" class="text-amber-500">Beranda</a>
-            <a href="sejarah.html" class="hover:text-amber-500 transition">Sejarah</a>
-            <a href="variasi.html" class="hover:text-amber-500 transition">Variasi</a>
-            <a href="resep.html" class="hover:text-amber-500 transition">Cara Seduh</a>
-            <a href="kontak.html" class="hover:text-amber-500 transition">Kontak</a>
-        </div>
-    </nav>
+<body class="bg-stone-950 text-stone-100 font-sans antialiased selection:bg-amber-500 selection:text-stone-950">
 
-    <header class="flex flex-col items-center justify-center text-center py-28 px-4 bg-gradient-to-b from-stone-950 to-stone-900">
-        <span class="text-amber-500 text-xs tracking-widest uppercase mb-3 font-semibold">Tradisi Dalam Setiap Tegukan</span>
-        <h2 class="text-5xl md:text-6xl font-extrabold max-w-3xl leading-tight">Hitam, Pekat, & Otentik.</h2>
-        <p class="mt-4 text-stone-400 max-w-xl text-lg">Menelusuri kekayaan rasa Kopi O, hidangan kopi hitam tradisional khas Melayu dan Peranakan yang melegenda.</p>
-        <a href="sejarah.html" class="mt-8 px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold rounded-full transition shadow-lg">Jelajahi Sejarah</a>
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-stone-950/80 backdrop-blur-md border-b border-stone-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#beranda" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-serif text-stone-950 font-bold text-xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">O</div>
+                <span class="font-serif font-bold text-2xl tracking-wide text-stone-100 group-hover:text-amber-500 transition-colors">KOPI O</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide text-stone-300">
+                <a href="#beranda" class="hover:text-amber-500 transition-colors">Beranda</a>
+                <a href="#sejarah" class="hover:text-amber-500 transition-colors">Sejarah</a>
+                <a href="#variasi" class="hover:text-amber-500 transition-colors">Variasi Menu</a>
+                <a href="#resep" class="hover:text-amber-500 transition-colors">Cara Seduh</a>
+                <a href="#kontak" class="hover:text-amber-500 transition-colors">Kontak</a>
+            </nav>
+            <a href="#resep" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500 text-stone-950 hover:bg-amber-400 transition-all shadow-md shadow-amber-500/10">Coba Resep</a>
+        </div>
     </header>
 
-    <section class="max-w-5xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-8 text-center">
-        <div class="p-6 bg-stone-800/50 rounded-2xl border border-stone-800">
-            <h3 class="text-amber-500 font-bold text-xl mb-2">Sangrai Mentega</h3>
-            <p class="text-stone-400 text-sm">Biji kopi disangrai bersama gula dan mentega untuk menghasilkan aroma karamel yang khas.</p>
+    <!-- 1. Hero / Beranda Section -->
+    <section id="beranda" class="min-h-screen relative flex items-center pt-20 overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-stone-900 via-stone-950 to-black">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f191515_1px,transparent_1px),linear-gradient(to_bottom,#1f191515_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div class="max-w-7xl mx-auto px-6 py-24 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/20 bg-amber-500/10 text-amber-400 text-xs font-semibold tracking-widest uppercase">
+                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                    Warisan Otentik Kopitiam
+                </div>
+                <h1 class="text-5xl sm:text-6xl xl:text-7xl font-serif font-extrabold text-stone-100 leading-[1.15]">
+                    Hitam, Pekat, & <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600">Penuh Tradisi.</span>
+                </h1>
+                <p class="text-lg text-stone-400 max-w-2xl leading-relaxed">
+                    Menelusuri kehangatan dan kekayaan rasa Kopi O — keharuman biji kopi karamelisasi khas Melayu dan Peranakan yang menyatukan keberagaman dalam setiap tegukan.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#sejarah" class="px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold transition-all shadow-lg shadow-amber-500/20">Jelajahi Sejarah</a>
+                    <a href="#variasi" class="px-8 py-4 rounded-xl border border-stone-800 hover:border-amber-500/50 bg-stone-900/50 text-stone-300 hover:text-stone-100 transition-all">Lihat Variasi</a>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+                <div class="relative mx-auto w-full max-w-md aspect-square rounded-3xl bg-gradient-to-tr from-amber-950/40 via-stone-900 to-stone-800/40 border border-stone-800 p-8 shadow-2xl flex flex-col justify-between overflow-hidden group">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl"></div>
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs font-mono text-amber-500">EST. ABAD 19</span>
+                        <span class="text-xs font-mono text-stone-500">MELAYU - PERANAKAN</span>
+                    </div>
+                    <div class="space-y-4 my-auto py-8">
+                        <h3 class="text-3xl font-serif font-bold text-stone-200">Keharuman Karamel Mentega</h3>
+                        <p class="text-sm text-stone-400 leading-relaxed">Proses roasting unik dengan gula dan mentega menciptakan lapisan rasa manis-gurih alami tanpa menutupi pahit khas kopi.</p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-800 flex justify-between items-center text-xs text-stone-400">
+                        <span>Ekstraksi Saringan Kain</span>
+                        <span class="text-amber-400 font-semibold">100% Otentik</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="p-6 bg-stone-800/50 rounded-2xl border border-stone-800">
-            <h3 class="text-amber-500 font-bold text-xl mb-2">Tanpa Susu</h3>
-            <p class="text-stone-400 text-sm">Huruf "O" berarti kosong atau telanjang—menyajikan karakter kopi hitam murni tanpa campuran susu.</p>
+    </section>
+
+    <!-- 2. Sejarah Section -->
+    <section id="sejarah" class="py-28 bg-stone-900/50 border-y border-stone-800/80 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500 mb-3">Filosofi & Asal Usul</h2>
+                <h3 class="text-4xl sm:text-5xl font-serif font-bold text-stone-100">Jejak Langkah Kopi O dalam Sejarah</h3>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-stone-900 border border-stone-800 hover:border-amber-500/30 transition-all space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono font-bold flex items-center justify-center text-lg">烏</div>
+                    <h4 class="text-xl font-bold text-stone-200">Makna Istilah "O"</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Huruf "O" berasal dari dialek Hokkien (烏 - <i>O͘</i>) yang berarti <strong>hitam</strong>. Istilah ini merujuk pada sajian kopi polos tanpa tambahan krimer atau susu pekat manis.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-stone-900 border border-stone-800 hover:border-amber-500/30 transition-all space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono font-bold flex items-center justify-center text-lg">☕</div>
+                    <h4 class="text-xl font-bold text-stone-200">Budaya Kopitiam</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Lahir dari persimpangan budaya imigran Tionghoa dan masyarakat Melayu di Singapura, Malaysia, serta Indonesia (Kepulauan Riau & Sumatra) sejak akhir abad ke-19.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-stone-900 border border-stone-800 hover:border-amber-500/30 transition-all space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono font-bold flex items-center justify-center text-lg">🔥</div>
+                    <h4 class="text-xl font-bold text-stone-200">Teknik Roasting Khas</h4>
+                    <p class="text-stone-400 text-sm leading-relaxed">
+                        Biji kopi disangrai bersama gula dan mentega/margarin. Teknik ini memberikan karakter body kental, aroma karamel manis gurih, serta mengurangi tingkat keasaman.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="p-6 bg-stone-800/50 rounded-2
+    </section>
+
+    <!-- 3. Variasi Menu Section -->
+    <section id="variasi" class="py-28 bg-stone-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500">Kamus Kopitiam</h2>
+                <h3 class="text-4xl font-serif font-bold text-stone-100">Variasi Pesanan Kopi O</h3>
+                <p class="text-stone-400 text-sm">Pahami istilah lokal saat memesan Kopi O kesukaanmu di kedai kopi tradisional.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-stone-900/60 border border-stone-800/80 hover:bg-stone-900 transition-all">
+                    <div class="text-amber-500 text-sm font-mono mb-2">Paling Populer</div>
+                    <h4 class="text-2xl font-bold text-stone-100 mb-2">Kopi O</h4>
+                    <p class="text-stone-400 text-sm">Kopi hitam panas standar yang disajikan dengan takaran gula pasir manis seimbang.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-stone-900/60 border border-stone-800/80 hover:bg-stone-900 transition-all">
+                    <div class="text-amber-500 text-sm font-mono mb-2">Murni & Pahit</div>
+                    <h4 class="text-2xl font-bold text-stone-100 mb-2">Kopi O Kosong</h4>
+                    <p class="text-stone-400 text-sm">Kopi hitam murni tanpa penambahan gula pasir atau manis sama sekali.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-stone-900/60 border border-stone-800/80 hover:bg-stone-900 transition-all">
+                    <div class="text-amber-500 text-sm font-mono mb-2">Dingin & Segar</div>
+                    <h4 class="text-2xl font-bold text-stone-100 mb-2">Kopi O Peng</h4>
+                    <p class="text-stone-400 text-sm">Sajikan Kopi O manis yang dituangkan di atas pecahan es batu segar.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-stone-900/60 border border-stone-800/80 hover:bg-stone-900 transition-all">
+                    <div class="text-amber-500 text-sm font-mono mb-2">Kental & Kuat</div>
+                    <h4 class="text-2xl font-bold text-stone-100 mb-2">Kopi O Gau</h4>
+                    <p class="text-stone-400 text-sm">Kopi O dengan konsentrasi ekstrak lebih pekat dan mantap di lidah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Resep & Cara Seduh Section -->
+    <section id="resep" class="py-28 bg-stone-900/30 border-t border-stone-800/60">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500">Panduan Seduh</h2>
+                <h3 class="text-4xl font-serif font-bold text-stone-100">Cara Menyeduh Kopi O Otentik di Rumah</h3>
+                <p class="text-stone-400 text-sm leading-relaxed">
+                    Menyeduh Kopi O membutuhkan presisi suhu dan teknik penyaringan kain tradisional (*sock filter*) untuk mengekstrak cita rasa karamel yang optimal.
+                </p>
+                <div class="p-6 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs space-y-2">
+                    <span class="font-bold uppercase tracking-wider block">Tips Utama:</span>
+                    <p>Gunakan bubuk kopi Robusta roasting margarin dan pastikan air benar-benar mendidih sebelum diseduh.</p>
+                </div>
+            </div>
+            <div class="lg:col-span-7 space-y-4">
+                <div class="flex gap-6 p-6 rounded-2xl bg-stone-900 border border-stone-800 items-start">
+                    <span class="w-10 h-10 rounded-full bg-amber-500/10 text-amber-500 font-bold flex items-center justify-center shrink-0 border border-amber-500/20">1</span>
+                    <div>
+                        <h4 class="font-bold text-stone-200 text-lg">Pilihan Biji Kopi</h4>
+                        <p class="text-stone-400 text-sm mt-1">Siapkan 15-20 gram bubuk kopi khas Kopitiam (Robusta sangrai margarin/gula) gilingan medium-fine.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-6 rounded-2xl bg-stone-900 border border-stone-800 items-start">
+                    <span class="w-10 h-10 rounded-full bg-amber-500/10 text-amber-500 font-bold flex items-center justify-center shrink-0 border border-amber-500/20">2</span>
+                    <div>
+                        <h4 class="font-bold text-stone-200 text-lg">Persiapan Saringan Kain</h4>
+                        <p class="text-stone-400 text-sm mt-1">Masukkan bubuk kopi ke dalam kantong saringan kain khas yang telah dibilas air panas.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-6 rounded-2xl bg-stone-900 border border-stone-800 items-start">
+                    <span class="w-10 h-10 rounded-full bg-amber-500/10 text-amber-500 font-bold flex items-center justify-center shrink-0 border border-amber-500/20">3</span>
+                    <div>
+                        <h4 class="font-bold text-stone-200 text-lg">Penyeduhan & Penarikan</h4>
+                        <p class="text-stone-400 text-sm mt-1">Tuangkan 180ml air mendidih (95°C) secara perlahan, biarkan terekstraksi dan tarik saringan 2-3 kali.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-6 rounded-2xl bg-stone-900 border border-stone-800 items-start">
+                    <span class="w-10 h-10 rounded-full bg-amber-500/10 text-amber-500 font-bold flex items-center justify-center shrink-0 border border-amber-500/20">4</span>
+                    <div>
+                        <h4 class="font-bold text-stone-200 text-lg">Penyajian</h4>
+                        <p class="text-stone-400 text-sm mt-1">Tambahkan 1-2 sendok teh gula pasir di cangkir, tuangkan ekstrak kopi pekat, aduk rata dan nikmati selagi hangat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Kontak Section -->
+    <section id="kontak" class="py-28 bg-stone-950 border-t border-stone-800/80">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center space-y-4 mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500">Hubungi Komunitas</h2>
+                <h3 class="text-4xl font-serif font-bold text-stone-100">Bagikan Pengalaman Kopi O Anda</h3>
+                <p class="text-stone-400 text-sm">Punya rekomendasi kedai kopi favorit atau pertanyaan seputar tradisi Kopi O?</p>
+            </div>
+            <form class="space-y-6 bg-stone-900/60 p-8 sm:p-10 rounded-3xl border border-stone-800 shadow-2xl">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Nama Lengkap</label>
+                        <input type="text" class="w-full px-4 py-3 bg-stone-950 rounded-xl border border-stone-800 text-stone-100 focus:outline-none focus:border-amber-500 transition-colors text-sm" placeholder="Contoh: Budi Santoso">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-3 bg-stone-950 rounded-xl border border-stone-800 text-stone-100 focus:outline-none focus:border-amber-500 transition-colors text-sm" placeholder="alamat@email.com">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Pesan / Pertanyaan</label>
+                    <textarea rows="4" class="w-full px-4 py-3 bg-stone-950 rounded-xl border border-stone-800 text-stone-100 focus:outline-none focus:border-amber-500 transition-colors text-sm" placeholder="Tuliskan pesan atau ulasan Anda..."></textarea>
+                </div>
+                <button type="button" class="w-full py-4 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold rounded-xl transition-all shadow-lg shadow-amber-500/10 uppercase tracking-wider text-xs">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black border-t border-stone-900 text-center text-xs text-stone-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Website Informasi Kopi O. Seluruh hak cipta dilindungi.</p>
+            <div class="flex gap-6">
+                <a href="#beranda" class="hover:text-stone-400 transition-colors">Beranda</a>
+                <a href="#sejarah" class="hover:text-stone-400 transition-colors">Sejarah</a>
+                <a href="#variasi" class="hover:text-stone-400 transition-colors">Variasi</a>
+                <a href="#resep" class="hover:text-stone-400 transition-colors">Cara Seduh</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
